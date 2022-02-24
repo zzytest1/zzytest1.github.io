@@ -4,15 +4,46 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<style>
-			body{
-				text-align: center;
-			}
-			img{
+			div{
 				width: 80%;
 				height: 80%;
-				animation: a linear 5s infinite;
+				/* background: #000; */
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			#img1{
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 50%;
+				animation: a linear 25s infinite;
+			}
+			#img2{
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 30%;
+				animation: b linear 8s infinite;
 			}
 			@keyframes a{
+				from{
+					transform: rotateZ(0deg);
+				}
+				to{
+					transform: rotateZ(360deg);
+				}
+			}
+			@keyframes b{
 				from{
 					transform: rotateZ(0deg);
 				}
@@ -23,6 +54,9 @@
 		</style>
 	</head>
 	<body>
-			<img src="img/0224154858.png" alt="">
+		<div>
+			<img id="img1" src="img/0224154858.png" alt="">
+			<img id="img2" src="img/3rp23rkpok.png" alt="">
+		</div>
 	</body>
 </html>
